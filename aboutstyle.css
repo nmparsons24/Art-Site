@@ -1,0 +1,148 @@
+/* Whole page */
+* {
+    background-color: rgb(251, 245, 240);
+    margin: 0;
+    padding: 0;
+    }
+    
+/* About page - header/navbar */
+header {
+    z-index: 1;
+    float: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(251, 245, 240, 0.5);
+}
+
+.headerName {
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    font-size: 4rem;
+    font-weight: 700;
+    font-family:"Reenie Beanie";
+    color:black;
+    background-color: rgb(251, 245, 240, 0.5);
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    border-top: 5px solid black;
+    box-shadow: 0 0 10px 0 #f8f9fa;
+    background-color: rgb(251, 245, 240, 0.5);
+}
+
+.topnav a {
+    text-decoration: none;
+    color:Black;
+    font-family: "Hind", sans-serif;
+    font-size: 1.2em;
+    background-color: rgb(251, 245, 240, 0.1);
+}
+
+.topnav a:hover {
+    scale: 1.2;
+    box-shadow:10px rgb(93, 93, 93, 0.7);
+    transition: 0.4s;
+}
+
+/* Div Spacer - Header + Homepage spacing */
+.spacing {
+    margin-top: 150px;
+}
+
+/* About page - text and image slider */
+/* present child divs side by side within the parent div */
+.aboutPage {
+    display: flex;
+    align-items: top;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 150px;
+    background-color: rgb(251, 245, 240);
+}
+
+/* About page - text */
+.aboutText {
+    /* display: flex; */
+    flex: 1;
+    /* margin: 35px; */
+    margin-bottom: 25px;
+    margin-right: 20px;
+    padding: 20px;
+    padding-left: 40px;
+    text-align: justify;
+    font-size: 20px;
+    font-family: "Hind", sans-serif;
+    animation: homepageTextAnim 2s cubic-bezier(0.12, 0, 0.39, 0) 1s 1 normal none;
+}
+
+.aboutText h1 {
+    text-align: justify;
+    font-size: 2.5em;
+    margin-bottom: 25px;
+    padding: 20px;
+    font-weight: 700;
+    font-family: "Reenie Beanie";
+    color: black;
+}
+
+.aboutText p {
+    text-align: justify;
+    font-size: 1em;
+    font-family: "Hind", sans-serif;
+    color: black;
+    padding: 20px;
+}
+
+@media (min-width: 1000px) {
+    .aboutText {
+    text-align: center;
+    }
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    flex: 1;
+    max-width: 75%;
+    padding: 4%;
+    margin: 10px;
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: homepageVidAnim 2s cubic-bezier(0.12, 0, 0.39, 0) 1s 1 normal none;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+    transition: opacity var(--fade-duration) ease-out
+  }
+
+  @keyframes fade {
+    from {opacity: .3} 
+    to {opacity: 1}
+  }
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+    
