@@ -1,0 +1,57 @@
+/* Whole page */
+* {
+    background-color: rgb(251, 245, 240);
+    margin: 0;
+    padding: 0;
+    }
+    
+    /* Home page - header/navbar */
+    header {
+      z-index: 1;
+      float: center;
+      position: fixed;
+      top:0;
+      left: 0;
+      width: 100%;
+      background-color: rgb(251, 245, 240, 0.5);
+    }
+    
+    .headerName {
+      overflow: hidden;
+      text-align: center;
+      padding: 10px;
+      font-size: 4rem;
+      font-weight: 700;
+      font-family:"Reenie Beanie";
+      color:black;
+      background-color: rgb(251, 245, 240, 0.5);
+    }
+    
+    .topnav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 20px;
+      border-top: 5px solid black;
+      box-shadow: 0 0 10px 0 #f8f9fa;
+      background-color: rgb(251, 245, 240, 0.5);
+    }
+    
+    .topnav a {
+      text-decoration: none;
+      color:Black;
+      font-family: "Hind", sans-serif;
+      font-size: 18px;
+      background-color: rgb(251, 245, 240, 0.1);
+    }
+    
+    .topnav a:hover {
+      scale: 1.2;
+      box-shadow:10px rgb(93, 93, 93, 0.7);
+      transition: 0.4s;
+    }
+    
+    /* Div Spacer - Header + Homepage spacing */
+    .spacing {
+      margin-top: 150px;
+    }
